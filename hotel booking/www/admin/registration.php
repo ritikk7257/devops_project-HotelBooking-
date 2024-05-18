@@ -7,10 +7,10 @@ if(isset($_REQUEST[ 'submit']))
     $register=$user->reg_user($fullname, $uname, $upass, $uemail); 
     if($register) 
     { 
-        echo "
+       //echo "
 <script type='text/javascript'>
     alert('Your Manager has been Added Successfully');
-</script>"; 
+</script>"; //
         echo "
 <script type='text/javascript'>
     window.location.href = '../admin.php';
@@ -18,10 +18,10 @@ if(isset($_REQUEST[ 'submit']))
     } 
     else 
     {
-        echo "
+        //echo "
 <script type='text/javascript'>
     alert('Registration failed! username or email already exists');
-</script>";
+</script>";//
     }
 } 
 ?>
